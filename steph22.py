@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import streamlit as st
-import matplotlib 
-import streamlit as st
-import pandas as pd
 from streamlit_option_menu import option_menu
 
 st.set_page_config(page_icon="images.jpg",layout="wide")
