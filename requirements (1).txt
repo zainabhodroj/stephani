@@ -5,3 +5,4 @@ requests==2.25.1
 streamlit-option-menu==0.3.2
 altair==4.2.0
 matplotlib==3.5.2
+plotly==5.9.0
