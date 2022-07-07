@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import streamlit as st
-import plotly.figure_factory as ff
 import matplotlib 
 import streamlit as st
 import pandas as pd
