@@ -5,6 +5,8 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import matplotlib.pyplot as plt
 import plotly_express as px
+import hydralit_components as hc
+from PIL import Image
 
 st.set_page_config(page_icon="images.jpg",layout="wide")
 font = "monospace"
