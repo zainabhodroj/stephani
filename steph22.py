@@ -21,7 +21,7 @@ if menu=="Dataset":col1.metric("Number of Accidents", "12,316")
 if menu=="Dataset":col2.metric("Features", "32")
 if menu=="Dataset":col3.metric("Time frame", "2017-2020")
 
-df= pd.read_csv("output(6).csv", sep='\t',  error_bad_lines=False)
+df= pd.read_csv("output(6).csv", sep='\t',  on_bad_lines=False)
 
 if menu=="Dataset": st.write(df)
 
