@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from streamlit_option_menu import option_menu
 import plotly.express as px
 import altair as alt
 import streamlit as st
@@ -11,6 +10,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+from streamlit_option_menu import option_menu
 
 st.set_page_config(page_icon="images.jpg",layout="wide")
 font = "monospace"
@@ -115,7 +115,6 @@ if menu=="Dashboard":col2.altair_chart(c, use_container_width=True)
 
 #fig2 heatmap: Severity/Day/light conditions
 df1=df.groupby('Accident_severity')['Day_of_week'].value_counts().unstack().fillna(0)
-import plotly.express as px
 fig = px.imshow(df1,
                 labels=dict(x="Day_of_Week", y="Light_conditions", color="Accident_severity"),
                 x=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday','Sunday'],
