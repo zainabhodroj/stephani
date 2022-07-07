@@ -1,7 +1,17 @@
 import streamlit as st
 import pandas as pd
-from PIL import Image
 from streamlit_option_menu import option_menu
+import plotly.express as px
+import altair as alt
+import streamlit as st
+import plotly.figure_factory as ff
+import matplotlib 
+import matplotlib.pyplot as plt
+import streamlit as st
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+
 st.set_page_config(page_icon="images.jpg",layout="wide")
 font = "monospace"
 st.subheader("MSBA350 Healthcare Analytics - Stephanie Abdelnour")
@@ -16,20 +26,11 @@ col1, col2, col3 = st.columns(3)
 if menu=="Dataset":col1.metric("Number of Accidents", "12,316")
 if menu=="Dataset":col2.metric("Features", "32")
 if menu=="Dataset":col3.metric("Time frame", "2017-2020")
-import pandas as pd
-import numpy as np
+
 df= pd.read_csv("output(6).csv", sep='\t',  error_bad_lines=False)
 
 if menu=="Dataset": st.write(df)
-from dash import Dash, dcc, html, Input, Output
-import plotly.express as px
-import altair as alt
-import streamlit as st
-import plotly.figure_factory as ff
-import matplotlib 
-import matplotlib.pyplot as plt
-import streamlit as st
-import matplotlib.pyplot as plt
+
 if menu=="Home":st.image('vehicle-damage-transport-crash-and-dangerous-vector-29448170.jpg')
 if menu=="Home": st.write("Road traffic accidents (RTAs) have emerged as an important public health issue which needs to be tackled by a multi-disciplinary approach. The trend in RTA injuries and death is becoming alarming in countries like Lebanon. The number of fatal and disabling road accident happening is increasing day by day and is a real public health challenge for all the concerned agencies to prevent it. The approach to implement the rules and regulations available to prevent road accidents is often ineffective and half-hearted. Awareness creation, strict implementation of traffic rules, and scientific engineering measures are the need of the hour to prevent this public health catastrophe.")
 #if menu=="Home": st.image("C:\Users\User\Desktop\myproject\SM286XhJ_400x400.jpg")
