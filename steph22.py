@@ -1,13 +1,10 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 import altair as alt
 import streamlit as st
 import plotly.figure_factory as ff
 import matplotlib 
-import matplotlib.pyplot as plt
 import streamlit as st
-import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from streamlit_option_menu import option_menu
